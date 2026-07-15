@@ -1,6 +1,6 @@
 // פיצ'ר B — רשימת המועדפים.
-// מקבל את המועדפים ופעולת הסרה מלמעלה (App), כדי שהרשימה תתעדכן
-// אוטומטית כשכרטיס הציטוט (A) מוסיף מועדף חדש.
+// פאנל נפרד שמציג את הציטוטים השמורים בלבד. ההוספה מגיעה משני מקומות:
+// כרטיס הציטוט (A) וסקשן החיפוש (QuoteSearch) — שניהם דרך state משותף ב-App.
 
 function FavoritesList({ favorites, loading, error, onRemove }) {
   return (
@@ -24,7 +24,7 @@ function FavoritesList({ favorites, loading, error, onRemove }) {
         <div className="favorites-empty">
           <span className="favorites-empty-icon">❤</span>
           <p>עדיין אין מועדפים</p>
-          <small>לחצו על "שמור" בכרטיס הציטוט כדי להוסיף לכאן</small>
+          <small>חפשו ציטוט למעלה או לחצו "שמור" בכרטיס כדי להוסיף לכאן</small>
         </div>
       )}
 

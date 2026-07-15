@@ -62,6 +62,17 @@ const mockApi = {
     writeCustomQuotes([...readCustomQuotes(), quote])
     return quote
   },
+  async searchQuotes(q) {
+    await delay()
+    const pool = [...SEED_QUOTES, ...readCustomQuotes()]
+    const needle = q.trim().toLowerCase()
+    if (!needle) return pool
+    return pool.filter(
+      (quote) =>
+        quote.text.toLowerCase().includes(needle) ||
+        quote.author.toLowerCase().includes(needle)
+    )
+  },
   async getFavorites() {
     await delay()
     return readFavorites()
@@ -110,12 +121,13 @@ const realApi = {
       method: 'POST',
       body: JSON.stringify({ text, author }),
     }),
+  searchQuotes: (q) => request(`/quotes?q=${encodeURIComponent(q)}`),
 }
 
 // ----------------------------- ייצוא ---------------------------------------
 
 const api = USE_MOCK ? mockApi : realApi
 
-export const { getRandomQuote, getFavorites, addFavorite, removeFavorite, addQuote } = api
+export const { getRandomQuote, getFavorites, addFavorite, removeFavorite, addQuote, searchQuotes } = api
 export { USE_MOCK }
 export default api

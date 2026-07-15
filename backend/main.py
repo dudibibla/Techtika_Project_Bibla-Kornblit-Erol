@@ -93,6 +93,24 @@ def add_quote(quote_req: QuoteRequest):
     return {"id": quote_id, "text": text, "author": author}
 
 
+@app.get("/quotes")
+def list_quotes(q: str | None = None, limit: int = 50):
+    """מחזיר ציטוטים מכל המאגר. עם ?q= מסנן לפי טקסט או מחבר (חיפוש כללי)."""
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    if q and q.strip():
+        like = f"%{q.strip()}%"
+        cursor.execute(
+            "SELECT id, text, author FROM quotes WHERE text LIKE ? OR author LIKE ? ORDER BY id LIMIT ?",
+            (like, like, limit),
+        )
+    else:
+        cursor.execute("SELECT id, text, author FROM quotes ORDER BY id LIMIT ?", (limit,))
+    rows = cursor.fetchall()
+    conn.close()
+    return [{"id": row["id"], "text": row["text"], "author": row["author"]} for row in rows]
+
+
 @app.get("/favorites")
 def get_favorites():
     conn = get_db_connection()
