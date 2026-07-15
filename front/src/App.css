@@ -83,6 +83,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  perspective: 1000px;
 }
 
 .quote-mark {
@@ -98,6 +99,14 @@
 
 .quote-body {
   margin: 40px 0 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 220ms ease-in, opacity 220ms ease-in;
+}
+
+.quote-body.is-flipping {
+  transform: rotateY(90deg);
+  opacity: 0;
 }
 
 .quote-text {
