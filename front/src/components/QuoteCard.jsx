@@ -7,15 +7,20 @@ import { getRandomQuote } from '../api'
 
 const FLIP_MS = 220 // חייב להתאים למשך המעבר של .quote-body ב-App.css
 
-function QuoteCard({ onSave }) {
+function QuoteCard({ onSave, favorites = [] }) {
   const [quote, setQuote] = useState(null)
   const [loading, setLoading] = useState(false)
-  const [saved, setSaved] = useState(false)
+  const [saving, setSaving] = useState(false)
+  const [saveError, setSaveError] = useState(false)
   const [flipping, setFlipping] = useState(false)
   const isFirstLoad = useRef(true)
 
+  // "נשמר" נגזר מרשימת המועדפים האמיתית (App) ולא ממצב מקומי, כדי שהכרטיס
+  // ישקף מיד גם מחיקה שבוצעה דרך רשימת המועדפים (B)
+  const isSaved = !!quote && favorites.some((f) => f.quote_id === quote.id)
+
   const loadQuote = async () => {
-    setSaved(false)
+    setSaveError(false)
 
     // בטעינה הראשונה אין כרטיס קיים להפוך ממנו - פשוט מציגים טעינה
     if (isFirstLoad.current) {
@@ -46,10 +51,17 @@ function QuoteCard({ onSave }) {
     loadQuote()
   }, [])
 
-  const handleSave = () => {
-    if (!quote) return
-    onSave(quote)
-    setSaved(true)
+  const handleSave = async () => {
+    if (!quote || isSaved || saving) return
+    setSaving(true)
+    setSaveError(false)
+    try {
+      await onSave(quote)
+    } catch {
+      setSaveError(true)
+    } finally {
+      setSaving(false)
+    }
   }
 
   return (
@@ -70,9 +82,9 @@ function QuoteCard({ onSave }) {
           type="button"
           className="btn btn-ghost"
           onClick={handleSave}
-          disabled={loading || flipping || saved}
+          disabled={loading || flipping || saving || isSaved}
         >
-          {saved ? '✓ נשמר' : '♥ שמור'}
+          {isSaved ? '✓ נשמר' : saving ? 'שומר…' : saveError ? '⚠ שגיאה, נסה שוב' : '♥ שמור'}
         </button>
         <button
           type="button"

@@ -71,7 +71,7 @@ const mockApi = {
     const list = readFavorites()
     // מונע כפילויות של אותו ציטוט
     if (list.some((f) => f.quote_id === quote.id)) return list
-    const favorite = { id: Date.now(), quote_id: quote.id, ...quote }
+    const favorite = { ...quote, id: Date.now(), quote_id: quote.id }
     const next = [favorite, ...list]
     writeFavorites(next)
     return favorite
