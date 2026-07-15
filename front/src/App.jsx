@@ -52,7 +52,7 @@ function App() {
 
       <main className="app-main">
         <div className="quote-column">
-          <QuoteCard onSave={handleSave} />
+          <QuoteCard onSave={handleSave} favorites={favorites} />
           <AddQuoteForm />
         </div>
         <div className="side-column">
