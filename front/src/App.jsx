@@ -1,121 +1,63 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { useEffect, useState } from 'react'
+import QuoteCard from './components/QuoteCard'
+import FavoritesList from './components/FavoritesList'
+import { getFavorites, addFavorite, removeFavorite, USE_MOCK } from './api'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // ה-state של המועדפים חי כאן (באב) כדי ששני הפיצ'רים ישתפו אותו:
+  // A מוסיף מועדף → B מתעדכן אוטומטית.
+  const [favorites, setFavorites] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(false)
+
+  useEffect(() => {
+    getFavorites()
+      .then(setFavorites)
+      .catch(() => setError(true))
+      .finally(() => setLoading(false))
+  }, [])
+
+  const handleSave = async (quote) => {
+    const favorite = await addFavorite(quote)
+    // אם השרת החזיר מועדף חדש (ולא רשימה קיימת) — נוסיף אותו לראש
+    if (favorite && favorite.id && !favorites.some((f) => f.id === favorite.id)) {
+      setFavorites((prev) => [favorite, ...prev])
+    }
+  }
+
+  const handleRemove = async (favoriteId) => {
+    await removeFavorite(favoriteId)
+    setFavorites((prev) => prev.filter((f) => f.id !== favoriteId))
+  }
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+    <div className="app" dir="rtl">
+      <header className="app-header">
+        <div className="brand">
+          <span className="brand-dot" />
+          <span className="brand-name">tectika</span>
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+        <h1>
+          ציטוט היום <span className="brand-en">Quote of the Day</span>
+        </h1>
+        {USE_MOCK && (
+          <p className="mock-badge">
+            מצב הדגמה (mock) — הנתונים נשמרים מקומית עד שהבאק אנד מחובר
           </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+        )}
+      </header>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      <main className="app-main">
+        <QuoteCard onSave={handleSave} />
+        <FavoritesList
+          favorites={favorites}
+          loading={loading}
+          error={error}
+          onRemove={handleRemove}
+        />
+      </main>
+    </div>
   )
 }
 
