@@ -1,0 +1,1843 @@
+{
+    "quotes": [
+        {
+            "id": 1,
+            "text": "Because I could not stop for Death – He kindly stopped for me –",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 2,
+            "text": "I felt a Funeral, in my Brain, and Mourners to and fro...",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 3,
+            "text": "I heard a Fly buzz – when I died –",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 4,
+            "text": "After great pain, a formal feeling comes – The Nerves sit ceremonious, like Tombs –",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 5,
+            "text": "There's a certain Slant of light, Winter Afternoons – That oppresses, like the Heft Of Cathedral Tunes –",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 6,
+            "text": "Pain — has an Element of Blank — It cannot recollect When it begun — or if there were A time when it was not —",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 7,
+            "text": "It was not Death, for I stood up, And all the Dead, were out –",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 8,
+            "text": "The Soul has Bandaged moments — When too appalled to stir —",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 9,
+            "text": "The Heart asks Pleasure — first — And then — Excuse from Pain — And then — those little Anodynes That deaden suffering —",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 10,
+            "text": "To die — takes just a little while — They say it doesn't hurt —",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 11,
+            "text": "I measure every Grief I meet With narrow, probing, eyes — I wonder if It weighs like Mine — Or has an Easier size —",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 12,
+            "text": "A Death blow is a Life blow to some Who till they died, did not alive become —",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 13,
+            "text": "Parting is all we know of heaven, and all we need of hell.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 14,
+            "text": "I died for Beauty — but was scarce Adjusted in the Tomb When One who died for Truth, was lain In an adjoining Room —",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 15,
+            "text": "They say that 'Time assuages' — Time never did assuage — An actual suffering strengthens, As sinews do, with age —",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 16,
+            "text": "Hope is the thing with feathers that perches in the soul.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 17,
+            "text": "That it will never come again is what makes life so sweet.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 18,
+            "text": "Forever is composed of nows.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 19,
+            "text": "To live is so startling it leaves little time for other occupations.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 20,
+            "text": "The soul should always stand ajar, ready to welcome the ecstatic experience.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 21,
+            "text": "If I can stop one heart from breaking, I shall not live in vain.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 22,
+            "text": "A wounded deer leaps highest.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 23,
+            "text": "Saying nothing sometimes says the most.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 24,
+            "text": "Success is counted sweetest by those who ne'er succeed.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 25,
+            "text": "Truth is so rare, it is delightful to tell it.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 26,
+            "text": "I dwell in possibility.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 27,
+            "text": "Pardon my sanity in a world insane.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 28,
+            "text": "Unable are the loved to die, for love is immortality.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 29,
+            "text": "The Brain is wider than the Sky.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 30,
+            "text": "Find ecstasy in life; the mere sense of living is joy enough.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 31,
+            "text": "There is no Frigate like a Book to take us Lands away.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 32,
+            "text": "The morning light is the best, it is so fresh and clean.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 33,
+            "text": "They might not need me; yet they might. I'll let my heart be just in sight.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 34,
+            "text": "Nature is a haunted house--but Art--is a house that tries to be haunted.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 35,
+            "text": "Behavior is what a man does, not what he thinks, feels, or believes.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 36,
+            "text": "Dogs are better than human beings because they know but do not tell.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 37,
+            "text": "Beauty is not caused. It is.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 38,
+            "text": "We turn not older with years, but newer every day.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 39,
+            "text": "This is my letter to the world that never wrote to me.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 40,
+            "text": "I'm nobody! Who are you? Are you nobody, too?",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 41,
+            "text": "Heart! We will forget him! You and I tonight!",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 42,
+            "text": "To love and be loved is to feel the sun from both sides.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 43,
+            "text": "Until I loved, I never lived.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 44,
+            "text": "The truth must dazzle gradually, or every man be blind.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 45,
+            "text": "Not knowing when the dawn will come I open every door.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 46,
+            "text": "A word is dead when it is said, some say. I say it just begins to live that day.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 47,
+            "text": "Hold dear to your parents, for it is a scary and confusing world without them.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 48,
+            "text": "I non-exist without you.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 49,
+            "text": "I know nothing in the world that has as much power as a word.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 50,
+            "text": "To write is to carve a path through the wilderness of the mind.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 51,
+            "text": "How strange that nature does not knock, and yet does not intrude!",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 52,
+            "text": "The soul selects her own society, then shuts the door.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 53,
+            "text": "The world is not conclusion; a species stands beyond.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 54,
+            "text": "Morning is when I am awake and there is a dawn in me.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 55,
+            "text": "To hold is not to possess; to love is to set free.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 56,
+            "text": "If I read a book and it makes my whole body so cold no fire can warm me, I know that is poetry.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 57,
+            "text": "Death is a wild night and a new road.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 58,
+            "text": "There is always a land of beyond.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 59,
+            "text": "Sweet is the swamp with its secrets.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 60,
+            "text": "But a book is only the heart's picture-book.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 61,
+            "text": "To be alive is power.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 62,
+            "text": "Earth is a heaven, if we only had the eyes to see it.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 63,
+            "text": "Where you are, that is home.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 64,
+            "text": "One need not be a chamber to be haunted; one need not be a house.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 65,
+            "text": "Love is its own rescue; for we, at our best, are but love.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 66,
+            "text": "The heart wants what it wants - or else it does not care.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 67,
+            "text": "Nature is our eldest mother, she never tells her secrets.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 68,
+            "text": "The past is not a package one can lay away.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 69,
+            "text": "I must go in, the fog is rising.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 70,
+            "text": "Wait till I can tell you all. It will take a lifetime.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 71,
+            "text": "An hour is a sea of gold.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 72,
+            "text": "A science so beautiful, it can only be whispered.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 73,
+            "text": "We must be careful what we say, for words have wings.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 74,
+            "text": "A face is the canvas of the soul.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 75,
+            "text": "The sun is but a spark of the eternal light.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 76,
+            "text": "The mind is a universe in itself.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 77,
+            "text": "The greatest poetry is the unspoken word.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 78,
+            "text": "Every day is a holiday to those who love.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 79,
+            "text": "The heart is the capital of the mind.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 80,
+            "text": "Hope is a subtle glutton; he feeds upon the daily bread.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 81,
+            "text": "Tell all the truth but tell it slant.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 82,
+            "text": "Water is taught by thirst; Land by the oceans passed.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 83,
+            "text": "The pedigree of honey does not concern the bee.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 84,
+            "text": "To lose is to learn; to win is to share.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 85,
+            "text": "The moon is a silver coin in the purse of the night.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 86,
+            "text": "A great hope is a great light.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 87,
+            "text": "The soul has bandaged moments.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 88,
+            "text": "A charm invests a face imperfectly beheld.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 89,
+            "text": "Grief is a heavy burden, but love makes it light.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 90,
+            "text": "The sky is a blue dome over our dreams.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 91,
+            "text": "Life is a spell so exquisite that everything conspires to break it.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 92,
+            "text": "I had no time to hate, because the grave would hinder me.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 93,
+            "text": "The nearest dream recedes, unrealized.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 94,
+            "text": "Faith is a fine invention for gentlemen who see, but microscopes are prudent in an emergency.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 95,
+            "text": "A soft sea-washed sound is the voice of the wind.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 96,
+            "text": "To make a prairie it takes a clover and one bee.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 97,
+            "text": "The leaves are falling, but the spirit is rising.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 98,
+            "text": "The heart is a secret chamber.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 99,
+            "text": "To hear the lark is to know the spring.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 100,
+            "text": "The wind has a voice of its own.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 101,
+            "text": "Love is a quiet river that flows forever.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 102,
+            "text": "The soul is the master of its own destiny.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 103,
+            "text": "A true friend is a treasure beyond measure.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 104,
+            "text": "The world is full of wonders, if we only look.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 105,
+            "text": "Every flower is a soul blossoming in nature.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 106,
+            "text": "The star is a diamond in the dark.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 107,
+            "text": "A quiet mind is a source of strength.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 108,
+            "text": "The sea is a mirror of the sky.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 109,
+            "text": "To dream is to live twice.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 110,
+            "text": "The sun is a golden ball of fire.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 111,
+            "text": "Love is the key to the universe.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 112,
+            "text": "The soul is an immortal flame.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 113,
+            "text": "A gentle word is like a summer breeze.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 114,
+            "text": "The heart is a wild thing.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 115,
+            "text": "To find a friend is to find a treasure.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 116,
+            "text": "The mind is a garden of thoughts.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 117,
+            "text": "The sky is a canvas of colors.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 118,
+            "text": "A kind act is never lost.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 119,
+            "text": "The soul is a sanctuary.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 120,
+            "text": "To be content is to be rich.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 121,
+            "text": "Love is the greatest force in the world.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 122,
+            "text": "The world is a beautiful place.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 123,
+            "text": "A smile is a language everyone understands.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 124,
+            "text": "The heart is a temple of love.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 125,
+            "text": "To forgive is to set a prisoner free.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 126,
+            "text": "The mind is a powerful tool.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 127,
+            "text": "The sky is a symbol of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 128,
+            "text": "A warm heart is a blessing.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 129,
+            "text": "The soul is a spark of the divine.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 130,
+            "text": "To love is to live.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 131,
+            "text": "The world is a stage of dreams.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 132,
+            "text": "A cheerful spirit is a source of joy.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 133,
+            "text": "The heart is a vessel of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 134,
+            "text": "To hope is to believe in tomorrow.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 135,
+            "text": "The mind is a searcher of truth.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 136,
+            "text": "The sky is a limit of dreams.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 137,
+            "text": "A loyal friend is a pillar of strength.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 138,
+            "text": "The soul is a voyager in the night.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 139,
+            "text": "To strive is to grow.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 140,
+            "text": "The world is a classroom of life.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 141,
+            "text": "A peaceful heart is a treasure.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 142,
+            "text": "The heart is a guide of life.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 143,
+            "text": "To seek is to find.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 144,
+            "text": "The mind is a creator of worlds.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 145,
+            "text": "The sky is a blanket of stars.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 146,
+            "text": "A generous soul is a beautiful thing.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 147,
+            "text": "The soul is a singer of songs.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 148,
+            "text": "To give is to receive.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 149,
+            "text": "The world is a garden of possibilities.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 150,
+            "text": "A brave heart is a shield of honor.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 151,
+            "text": "The heart is a source of light.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 152,
+            "text": "To learn is to live.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 153,
+            "text": "The mind is a builder of dreams.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 154,
+            "text": "The sky is a window to the infinite.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 155,
+            "text": "A pure heart is a mirror of truth.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 156,
+            "text": "The soul is a keeper of secrets.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 157,
+            "text": "To trust is to love.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 158,
+            "text": "The world is a tapestry of life.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 159,
+            "text": "A joyful heart is a sunbeam.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 160,
+            "text": "The heart is a treasure chest.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 161,
+            "text": "To dream is to touch the sky.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 162,
+            "text": "The mind is a light in the dark.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 163,
+            "text": "The sky is a dome of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 164,
+            "text": "A sincere friend is a rare gem.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 165,
+            "text": "The soul is a beacon of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 166,
+            "text": "To achieve is to struggle.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 167,
+            "text": "The world is a journey of discovery.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 168,
+            "text": "A quiet soul is a deep well.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 169,
+            "text": "The heart is a compass of love.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 170,
+            "text": "To believe is to see.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 171,
+            "text": "The mind is a fortress of strength.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 172,
+            "text": "The sky is a path of light.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 173,
+            "text": "A kind word is a healing balm.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 174,
+            "text": "The soul is an ocean of thoughts.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 175,
+            "text": "To love is to be free.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 176,
+            "text": "The world is a miracle of life.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 177,
+            "text": "A patient heart is a strong shield.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 178,
+            "text": "The heart is a singer of joy.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 179,
+            "text": "To seek beauty is to find it.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 180,
+            "text": "The mind is a spring of creativity.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 181,
+            "text": "The sky is a shield of protection.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 182,
+            "text": "A grateful heart is a continuous feast.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 183,
+            "text": "The soul is a silent witness.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 184,
+            "text": "To forgive is to find peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 185,
+            "text": "The world is a stage of wonders.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 186,
+            "text": "A simple life is a beautiful life.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 187,
+            "text": "The heart is a home of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 188,
+            "text": "To hope is to fly.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 189,
+            "text": "The mind is a star in the dark.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 190,
+            "text": "The sky is a map of dreams.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 191,
+            "text": "A faithful heart is a true guide.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 192,
+            "text": "The soul is a garden of flowers.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 193,
+            "text": "To build is to create.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 194,
+            "text": "The world is a river of time.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 195,
+            "text": "A gentle spirit is a source of grace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 196,
+            "text": "The heart is a shield of love.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 197,
+            "text": "To discover is to learn.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 198,
+            "text": "The mind is a key to the future.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 199,
+            "text": "The sky is a roof of stars.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 200,
+            "text": "A noble heart is a treasure of gold.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 201,
+            "text": "The soul is a spark of life.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 202,
+            "text": "To share is to love.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 203,
+            "text": "The world is a book of stories.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 204,
+            "text": "A quiet mind is a peaceful home.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 205,
+            "text": "The heart is a well of love.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 206,
+            "text": "To dream is to fly without wings.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 207,
+            "text": "The mind is a guide in the night.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 208,
+            "text": "The sky is a symbol of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 209,
+            "text": "A warm smile is a universal welcome.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 210,
+            "text": "The soul is a guardian of light.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 211,
+            "text": "To seek truth is to seek freedom.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 212,
+            "text": "The world is a canvas of dreams.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 213,
+            "text": "A brave soul is a beacon of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 214,
+            "text": "The heart is a vessel of joy.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 215,
+            "text": "To love is to know God.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 216,
+            "text": "The mind is a window of light.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 217,
+            "text": "The sky is a sea of stars.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 218,
+            "text": "A kind deed is a seed of love.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 219,
+            "text": "The soul is a silent river.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 220,
+            "text": "To forgive is to heal.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 221,
+            "text": "The world is a garden of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 222,
+            "text": "A simple heart is a pure heart.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 223,
+            "text": "The heart is a temple of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 224,
+            "text": "To hope is to dream awake.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 225,
+            "text": "The mind is a treasure of thoughts.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 226,
+            "text": "The sky is a canvas of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 227,
+            "text": "A loyal heart is a true friend.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 228,
+            "text": "The soul is a singer of truth.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 229,
+            "text": "To live is to love.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 230,
+            "text": "The world is a stage of life.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 231,
+            "text": "A cheerful heart is a good medicine.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 232,
+            "text": "The heart is a fountain of life.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 233,
+            "text": "To believe is to achieve.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 234,
+            "text": "The mind is a builder of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 235,
+            "text": "The sky is a roof of dreams.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 236,
+            "text": "A generous heart is a source of joy.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 237,
+            "text": "The soul is a voyager of light.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 238,
+            "text": "To strive is to conquer.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 239,
+            "text": "The world is a school of wisdom.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 240,
+            "text": "A peaceful mind is a quiet sanctuary.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 241,
+            "text": "The heart is a guide of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 242,
+            "text": "To seek is to discover.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 243,
+            "text": "The mind is a creator of beauty.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 244,
+            "text": "The sky is a blanket of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 245,
+            "text": "A noble soul is a light in the dark.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 246,
+            "text": "The soul is a keeper of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 247,
+            "text": "To trust is to be free.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 248,
+            "text": "The world is a tapestry of dreams.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 249,
+            "text": "A joyful spirit is a sunbeam in the soul.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 250,
+            "text": "The heart is a treasury of love.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 251,
+            "text": "To dream is to touch the stars.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 252,
+            "text": "The mind is a lamp of truth.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 253,
+            "text": "The sky is a dome of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 254,
+            "text": "A true friend is a shield in need.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 255,
+            "text": "The soul is a beacon of light.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 256,
+            "text": "To achieve is to overcome.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 257,
+            "text": "The world is a journey of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 258,
+            "text": "A quiet heart is a deep ocean.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 259,
+            "text": "The heart is a compass of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 260,
+            "text": "To believe is to live.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 261,
+            "text": "The mind is a fortress of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 262,
+            "text": "The sky is a path of dreams.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 263,
+            "text": "A kind spirit is a healing touch.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 264,
+            "text": "The soul is an ocean of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 265,
+            "text": "To love is to be happy.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 266,
+            "text": "The world is a miracle of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 267,
+            "text": "A patient soul is a pillar of strength.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 268,
+            "text": "The heart is a singer of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 269,
+            "text": "To seek wisdom is to find life.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 270,
+            "text": "The mind is a fountain of ideas.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 271,
+            "text": "The sky is a shield of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 272,
+            "text": "A grateful spirit is a continuous joy.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 273,
+            "text": "The soul is a silent guide.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 274,
+            "text": "To forgive is to love.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 275,
+            "text": "The world is a stage of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 276,
+            "text": "A simple soul is a beautiful soul.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 277,
+            "text": "The heart is a home of love.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 278,
+            "text": "To hope is to soar.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 279,
+            "text": "The mind is a star of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 280,
+            "text": "The sky is a map of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 281,
+            "text": "A faithful soul is a true companion.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 282,
+            "text": "The soul is a garden of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 283,
+            "text": "To build is to hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 284,
+            "text": "The world is a river of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 285,
+            "text": "A gentle heart is a source of strength.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 286,
+            "text": "The heart is a shield of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 287,
+            "text": "To discover is to grow.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 288,
+            "text": "The mind is a key to wisdom.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 289,
+            "text": "The sky is a roof of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 290,
+            "text": "A noble spirit is a treasure of light.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 291,
+            "text": "The soul is a spark of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 292,
+            "text": "To share is to hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 293,
+            "text": "The world is a book of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 294,
+            "text": "A quiet spirit is a peaceful sanctuary.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 295,
+            "text": "The heart is a well of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 296,
+            "text": "To dream is to hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 297,
+            "text": "The mind is a guide of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 298,
+            "text": "A warm heart is a universal light.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 299,
+            "text": "The soul is a guardian of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 300,
+            "text": "To seek light is to find hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 301,
+            "text": "The world is a canvas of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 302,
+            "text": "A brave heart is a beacon of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 303,
+            "text": "The heart is a vessel of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 304,
+            "text": "To love is to find hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 305,
+            "text": "The mind is a window of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 306,
+            "text": "The sky is a sea of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 307,
+            "text": "A kind heart is a seed of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 308,
+            "text": "The soul is a silent hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 309,
+            "text": "To forgive is to restore hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 310,
+            "text": "The world is a garden of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 311,
+            "text": "A simple mind is a pure soul.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 312,
+            "text": "The heart is a temple of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 313,
+            "text": "To hope is to live in light.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 314,
+            "text": "The mind is a treasure of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 315,
+            "text": "The sky is a canvas of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 316,
+            "text": "A loyal soul is a true guide.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 317,
+            "text": "The soul is a singer of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 318,
+            "text": "To live is to dream.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 319,
+            "text": "The world is a stage of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 320,
+            "text": "A cheerful soul is a source of strength.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 321,
+            "text": "The heart is a fountain of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 322,
+            "text": "To believe is to find peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 323,
+            "text": "The mind is a builder of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 324,
+            "text": "The sky is a roof of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 325,
+            "text": "A generous spirit is a source of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 326,
+            "text": "The soul is a voyager of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 327,
+            "text": "To strive is to find hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 328,
+            "text": "The world is a school of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 329,
+            "text": "A peaceful soul is a quiet home.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 330,
+            "text": "The heart is a guide of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 331,
+            "text": "To seek is to find peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 332,
+            "text": "The mind is a creator of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 333,
+            "text": "The sky is a blanket of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 334,
+            "text": "A noble heart is a light in the night.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 335,
+            "text": "The soul is a keeper of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 336,
+            "text": "To trust is to find peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 337,
+            "text": "The world is a tapestry of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 338,
+            "text": "A joyful heart is a sunbeam of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 339,
+            "text": "The heart is a treasury of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 340,
+            "text": "To dream is to touch peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 341,
+            "text": "The mind is a lamp of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 342,
+            "text": "A true friend is a shield of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 343,
+            "text": "The soul is a beacon of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 344,
+            "text": "To achieve is to find peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 345,
+            "text": "The world is a journey of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 346,
+            "text": "A quiet mind is a deep peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 347,
+            "text": "The heart is a compass of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 348,
+            "text": "To believe is to find hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 349,
+            "text": "The mind is a fortress of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 350,
+            "text": "The sky is a path of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 351,
+            "text": "A kind soul is a healing light.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 352,
+            "text": "The soul is an ocean of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 353,
+            "text": "To love is to find peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 354,
+            "text": "The world is a miracle of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 355,
+            "text": "A patient heart is a pillar of hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 356,
+            "text": "The heart is a singer of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 357,
+            "text": "To seek peace is to find life.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 358,
+            "text": "The mind is a fountain of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 359,
+            "text": "The sky is a shield of peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 360,
+            "text": "A grateful heart is a continuous peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 361,
+            "text": "The soul is a silent peace.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 362,
+            "text": "To forgive is to find hope.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 363,
+            "text": "A loss of something ever on my mind.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 364,
+            "text": "A little Madness in the Spring Is wholesome even for the King.",
+            "author": "Emily Dickinson"
+        },
+        {
+            "id": 365,
+            "text": "If I can prevent one heart from breaking, my life will not be in vain.",
+            "author": "Emily Dickinson"
+        }
+    ],
+    "favorites": [
+        {
+            "id": 1,
+            "quote_id": 1
+        },
+        {
+            "id": 2,
+            "quote_id": 3
+        },
+        {
+            "id": 3,
+            "quote_id": 11
+        }
+    ]
+}

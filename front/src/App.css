@@ -70,6 +70,12 @@
   }
 }
 
+.quote-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 /* -------------------------------- Quote card ------------------------------ */
 
 .quote-card {
@@ -173,6 +179,67 @@
 .btn-ghost:not(:disabled):hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+/* ------------------------------ Add quote (A) ------------------------------ */
+
+.add-quote {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px 28px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.add-quote h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.add-quote-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--text-soft);
+}
+
+.add-quote-field textarea,
+.add-quote-field input {
+  font: inherit;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card-alt);
+  color: var(--text);
+  resize: vertical;
+}
+
+.add-quote-field textarea:focus,
+.add-quote-field input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.add-quote-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.add-quote-status {
+  font-size: 13px;
+}
+
+.add-quote-success {
+  color: #2ea043;
+}
+
+.add-quote-error {
+  color: var(--accent-dark);
 }
 
 /* ------------------------------- Favorites (B) ---------------------------- */

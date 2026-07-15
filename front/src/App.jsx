@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import QuoteCard from './components/QuoteCard'
+import AddQuoteForm from './components/AddQuoteForm'
 import FavoritesList from './components/FavoritesList'
 import { getFavorites, addFavorite, removeFavorite, USE_MOCK } from './api'
 import './App.css'
@@ -49,7 +50,10 @@ function App() {
       </header>
 
       <main className="app-main">
-        <QuoteCard onSave={handleSave} />
+        <div className="quote-column">
+          <QuoteCard onSave={handleSave} />
+          <AddQuoteForm />
+        </div>
         <FavoritesList
           favorites={favorites}
           loading={loading}
