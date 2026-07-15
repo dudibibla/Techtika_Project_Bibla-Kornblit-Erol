@@ -22,6 +22,7 @@ const SEED_QUOTES = [
 ]
 
 const FAVORITES_KEY = 'qotd_favorites'
+const CUSTOM_QUOTES_KEY = 'qotd_custom_quotes'
 
 const readFavorites = () => {
   try {
@@ -34,14 +35,32 @@ const readFavorites = () => {
 const writeFavorites = (list) =>
   localStorage.setItem(FAVORITES_KEY, JSON.stringify(list))
 
+const readCustomQuotes = () => {
+  try {
+    return JSON.parse(localStorage.getItem(CUSTOM_QUOTES_KEY)) || []
+  } catch {
+    return []
+  }
+}
+
+const writeCustomQuotes = (list) =>
+  localStorage.setItem(CUSTOM_QUOTES_KEY, JSON.stringify(list))
+
 // דמיית השהיית רשת קטנה, כדי לראות מצבי טעינה אמיתיים
 const delay = (ms = 250) => new Promise((r) => setTimeout(r, ms))
 
 const mockApi = {
   async getRandomQuote() {
     await delay()
-    const i = Math.floor(Math.random() * SEED_QUOTES.length)
-    return SEED_QUOTES[i]
+    const pool = [...SEED_QUOTES, ...readCustomQuotes()]
+    const i = Math.floor(Math.random() * pool.length)
+    return pool[i]
+  },
+  async addQuote({ text, author }) {
+    await delay()
+    const quote = { id: Date.now(), text, author }
+    writeCustomQuotes([...readCustomQuotes(), quote])
+    return quote
   },
   async getFavorites() {
     await delay()
@@ -86,12 +105,17 @@ const realApi = {
     }),
   removeFavorite: (favoriteId) =>
     request(`/favorites/${favoriteId}`, { method: 'DELETE' }),
+  addQuote: ({ text, author }) =>
+    request('/quotes', {
+      method: 'POST',
+      body: JSON.stringify({ text, author }),
+    }),
 }
 
 // ----------------------------- ייצוא ---------------------------------------
 
 const api = USE_MOCK ? mockApi : realApi
 
-export const { getRandomQuote, getFavorites, addFavorite, removeFavorite } = api
+export const { getRandomQuote, getFavorites, addFavorite, removeFavorite, addQuote } = api
 export { USE_MOCK }
 export default api
