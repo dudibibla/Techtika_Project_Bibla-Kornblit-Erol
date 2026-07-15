@@ -21,6 +21,12 @@ app.add_middleware(
 class FavoriteRequest(BaseModel):
     quote_id: int
 
+
+class QuoteRequest(BaseModel):
+    text: str
+    author: str
+
+
 @app.get("/random")
 def get_random_quote():
     conn = get_db_connection()
@@ -35,6 +41,57 @@ def get_random_quote():
             detail="No quotes found in the database. Please ensure it is seeded."
         )
     return {"id": row["id"], "text": row["text"], "author": row["author"]}
+
+
+@app.post("/quotes", status_code=status.HTTP_201_CREATED)
+def add_quote(quote_req: QuoteRequest):
+    text = quote_req.text.strip()
+    author = quote_req.author.strip()
+
+    if not text:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Quote text must not be empty."
+        )
+
+    if not author:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Quote author must not be empty."
+        )
+
+    if len(text) > 1000:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Quote text must not exceed 1000 characters."
+        )
+
+    if len(author) > 200:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Quote author must not exceed 200 characters."
+        )
+
+    conn = get_db_connection()
+    try:
+        cursor = conn.cursor()
+        cursor.execute(
+            "INSERT INTO quotes (text, author) VALUES (?, ?)",
+            (text, author)
+        )
+        conn.commit()
+        quote_id = cursor.lastrowid
+    except sqlite3.DatabaseError as exc:
+        conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Could not save quote."
+        ) from exc
+    finally:
+        conn.close()
+
+    return {"id": quote_id, "text": text, "author": author}
+
 
 @app.get("/favorites")
 def get_favorites():
