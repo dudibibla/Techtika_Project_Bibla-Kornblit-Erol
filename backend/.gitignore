@@ -1,6 +1,0 @@
-quotes.db
-*.sqlite
-.venv/
-venv/
-__pycache__/
-*.pyc
