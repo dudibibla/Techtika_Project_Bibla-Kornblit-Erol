@@ -1,184 +1,298 @@
-.counter {
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* ---------------------------------- Header -------------------------------- */
+
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.brand-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: conic-gradient(#e6486a, #f6a13c, #3ec7c2, #7b5cff, #e6486a);
+}
+
+.brand-name {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.app-header h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.brand-en {
   color: var(--accent);
-  background: var(--accent-bg);
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
-  margin-bottom: 24px;
+  font-family: var(--mono);
+  font-size: 0.7em;
+}
 
-  &:hover {
-    border-color: var(--accent-border);
+.mock-badge {
+  margin: 16px auto 0;
+  display: inline-block;
+  font-size: 13px;
+  color: var(--accent-dark);
+  background: rgba(230, 72, 106, 0.1);
+  border: 1px solid rgba(230, 72, 106, 0.25);
+  border-radius: 999px;
+  padding: 5px 14px;
+}
+
+/* ----------------------------------- Main --------------------------------- */
+
+.app-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .app-main {
+    grid-template-columns: 1fr;
   }
-  &:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
+  .app-header h1 {
+    font-size: 30px;
   }
 }
 
-.hero {
+/* -------------------------------- Quote card ------------------------------ */
+
+.quote-card {
   position: relative;
-
-  .base,
-  .framework,
-  .vite {
-    inset-inline: 0;
-    margin: 0 auto;
-  }
-
-  .base {
-    width: 170px;
-    position: relative;
-    z-index: 0;
-  }
-
-  .framework,
-  .vite {
-    position: absolute;
-  }
-
-  .framework {
-    z-index: 1;
-    top: 34px;
-    height: 28px;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
-      scale(1.4);
-  }
-
-  .vite {
-    z-index: 0;
-    top: 107px;
-    height: 26px;
-    width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
-      scale(0.8);
-  }
-}
-
-#center {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 32px 28px 24px;
+  box-shadow: var(--shadow);
+  min-height: 230px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  place-content: center;
-  place-items: center;
-  flex-grow: 1;
-
-  @media (max-width: 1024px) {
-    padding: 32px 20px 24px;
-    gap: 18px;
-  }
+  justify-content: space-between;
+  perspective: 1000px;
 }
 
-#next-steps {
+.quote-mark {
+  position: absolute;
+  top: 10px;
+  inset-inline-start: 24px;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.85;
+  font-family: Georgia, serif;
+}
+
+.quote-body {
+  margin: 40px 0 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 220ms ease-in, opacity 220ms ease-in;
+}
+
+.quote-body.is-flipping {
+  transform: rotateY(90deg);
+  opacity: 0;
+}
+
+.quote-text {
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.quote-author {
+  color: var(--text-soft);
+  font-style: normal;
+  font-size: 15px;
+}
+
+.quote-loading {
+  margin: 48px 0;
+  color: var(--text-soft);
+}
+
+.quote-actions {
   display: flex;
-  border-top: 1px solid var(--border);
-  text-align: left;
-
-  & > div {
-    flex: 1 1 0;
-    padding: 32px;
-    @media (max-width: 1024px) {
-      padding: 24px 20px;
-    }
-  }
-
-  .icon {
-    margin-bottom: 16px;
-    width: 22px;
-    height: 22px;
-  }
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    text-align: center;
-  }
+  gap: 10px;
+  margin-top: 24px;
 }
 
-#docs {
-  border-right: 1px solid var(--border);
+/* --------------------------------- Buttons -------------------------------- */
 
-  @media (max-width: 1024px) {
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
+.btn {
+  font: inherit;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform 0.06s ease, background 0.15s ease, opacity 0.15s ease;
 }
 
-#next-steps ul {
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  margin-inline-start: auto;
+}
+
+.btn-primary:not(:disabled):hover {
+  background: var(--accent-dark);
+}
+
+.btn-ghost {
+  background: var(--card-alt);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.btn-ghost:not(:disabled):hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ------------------------------- Favorites (B) ---------------------------- */
+
+.favorites {
+  background: var(--card-alt);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px;
+  min-height: 230px;
+}
+
+.favorites-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.favorites-head h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.favorites-count {
+  background: var(--accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 7px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorites-status {
+  color: var(--text-soft);
+  margin: 24px 0;
+}
+
+.favorites-error {
+  color: var(--accent-dark);
+}
+
+/* Empty state */
+.favorites-empty {
+  text-align: center;
+  color: var(--text-soft);
+  padding: 34px 12px;
+}
+
+.favorites-empty-icon {
+  font-size: 34px;
+  color: var(--border);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.favorites-empty p {
+  margin: 0 0 6px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.favorites-empty small {
+  font-size: 13px;
+}
+
+/* List */
+.favorites-items {
   list-style: none;
+  margin: 0;
   padding: 0;
   display: flex;
-  gap: 8px;
-  margin: 32px 0 0;
-
-  .logo {
-    height: 18px;
-  }
-
-  a {
-    color: var(--text-h);
-    font-size: 16px;
-    border-radius: 6px;
-    background: var(--social-bg);
-    display: flex;
-    padding: 6px 12px;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    transition: box-shadow 0.3s;
-
-    &:hover {
-      box-shadow: var(--shadow);
-    }
-    .button-icon {
-      height: 18px;
-      width: 18px;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    li {
-      flex: 1 1 calc(50% - 8px);
-    }
-
-    a {
-      width: 100%;
-      justify-content: center;
-      box-sizing: border-box;
-    }
-  }
+  flex-direction: column;
+  gap: 12px;
 }
 
-#spacer {
-  height: 88px;
-  border-top: 1px solid var(--border);
-  @media (max-width: 1024px) {
-    height: 48px;
-  }
+.favorite-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
 }
 
-.ticks {
-  position: relative;
-  width: 100%;
+.favorite-text {
+  flex: 1;
+}
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: -4.5px;
-    border: 5px solid transparent;
-  }
+.favorite-text p {
+  margin: 0 0 4px;
+  font-size: 15px;
+  line-height: 1.5;
+}
 
-  &::before {
-    left: 0;
-    border-left-color: var(--border);
-  }
-  &::after {
-    right: 0;
-    border-right-color: var(--border);
-  }
+.favorite-author {
+  color: var(--text-soft);
+  font-size: 13px;
+}
+
+.favorite-remove {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: var(--text-soft);
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.favorite-remove:hover {
+  background: rgba(230, 72, 106, 0.12);
+  color: var(--accent);
 }
