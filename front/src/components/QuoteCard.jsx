@@ -2,22 +2,44 @@
 // בניתי גרסה מינימלית ועובדת רק כדי שאפשר לבדוק את רשימת המועדפים (B)
 // מקצה לקצה. מי שעובד על A מוזמן להחליף/לשפר את כל הקומפוננטה הזו.
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { getRandomQuote } from '../api'
+
+const FLIP_MS = 220 // חייב להתאים למשך המעבר של .quote-body ב-App.css
 
 function QuoteCard({ onSave }) {
   const [quote, setQuote] = useState(null)
   const [loading, setLoading] = useState(false)
   const [saved, setSaved] = useState(false)
+  const [flipping, setFlipping] = useState(false)
+  const isFirstLoad = useRef(true)
 
   const loadQuote = async () => {
-    setLoading(true)
     setSaved(false)
-    try {
-      setQuote(await getRandomQuote())
-    } finally {
-      setLoading(false)
+
+    // בטעינה הראשונה אין כרטיס קיים להפוך ממנו - פשוט מציגים טעינה
+    if (isFirstLoad.current) {
+      setLoading(true)
+      try {
+        setQuote(await getRandomQuote())
+      } finally {
+        setLoading(false)
+        isFirstLoad.current = false
+      }
+      return
     }
+
+    setLoading(true)
+    const next = await getRandomQuote()
+    setLoading(false)
+
+    // הופכים את הכרטיס (0deg -> 90deg), מחליפים ציטוט בחצי הסיבוב, וממשיכים
+    // (90deg -> 0deg) עם התוכן החדש
+    setFlipping(true)
+    window.setTimeout(() => {
+      setQuote(next)
+      setFlipping(false)
+    }, FLIP_MS)
   }
 
   useEffect(() => {
@@ -37,7 +59,7 @@ function QuoteCard({ onSave }) {
       {loading || !quote ? (
         <p className="quote-loading">טוען ציטוט…</p>
       ) : (
-        <blockquote className="quote-body">
+        <blockquote className={`quote-body${flipping ? ' is-flipping' : ''}`}>
           <p className="quote-text">{quote.text}</p>
           <cite className="quote-author">{quote.author}</cite>
         </blockquote>
@@ -48,7 +70,7 @@ function QuoteCard({ onSave }) {
           type="button"
           className="btn btn-ghost"
           onClick={handleSave}
-          disabled={loading || saved}
+          disabled={loading || flipping || saved}
         >
           {saved ? '✓ נשמר' : '♥ שמור'}
         </button>
@@ -56,7 +78,7 @@ function QuoteCard({ onSave }) {
           type="button"
           className="btn btn-primary"
           onClick={loadQuote}
-          disabled={loading}
+          disabled={loading || flipping}
         >
           New
         </button>
